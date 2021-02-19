@@ -60,7 +60,7 @@ const CloseModalButton = tw.button`absolute top-0 right-0 mt-8 mr-8 hocus:text-p
 
 export default ({
   heading = "We specialize in job appraisal consulting and professional development coaching.",
-  description = "Our templates are easy to setup, understand and customize. Fully modular components with a variety of pages and components.",
+  description = "",
   primaryButtonText = "Get Started",
   primaryButtonUrl = "#",
   watchVideoButtonText = "Watch Video",
