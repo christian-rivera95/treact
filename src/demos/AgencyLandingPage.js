@@ -9,6 +9,7 @@ import MainFeature from "components/features/TwoColSingleFeatureWithStats2.js";
 import MainFeature2 from "components/features/TwoColWithTwoFeaturesAndButtons.js";
 import Portfolio from "components/cards/PortfolioTwoCardsWithImage.js";
 import Blog from "components/blogs/ThreeColSimpleWithImageAndDashedBorder.js";
+import OurTeam from "components/ourTeam/ThreeColSimpleWithImageAndDashedBorder.js";
 import Testimonial from "components/testimonials/TwoColumnWithImageAndProfilePictureReview.js";
 import FAQ from "components/faqs/SimpleWithSideImage.js";
 import ContactUsForm from "components/forms/TwoColContactUsWithIllustration.js";
@@ -39,7 +40,7 @@ export default () => (
           quote:
             "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.",
           customerName: "Charlotte Hale",
-          customerTitle: "CEO, Tesla Inc."
+          customerTitle: "CEO, Tesla Inc.",
         },
         {
           imageSrc:
@@ -49,11 +50,12 @@ export default () => (
           quote:
             "Sinor Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.",
           customerName: "Adam Cuppy",
-          customerTitle: "Founder, Nestle"
-        }
+          customerTitle: "Founder, Nestle",
+        },
       ]}
       textOnLeft={true}
     />
+    <OurTeam />
     <FAQ
       imageSrc={customerSupportIllustrationSrc}
       imageContain={true}

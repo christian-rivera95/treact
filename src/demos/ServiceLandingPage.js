@@ -58,7 +58,6 @@ export default () => {
         }
       />
       <Blog
-        id="Blog"
         subheading="Blog"
         heading={
           <>
