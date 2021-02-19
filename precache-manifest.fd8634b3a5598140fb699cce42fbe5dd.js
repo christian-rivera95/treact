@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "9c96e903d32212caed2581962fee31b6",
+    "revision": "f31df4b5f91cc97536c235a187817337",
     "url": "/treact/index.html"
   },
   {
-    "revision": "ba38373e0382789d5053",
+    "revision": "b637b4c858b9e308995c",
     "url": "/treact/static/css/2.6011fe8e.chunk.css"
   },
   {
-    "revision": "7c693147dd9397125308",
+    "revision": "a3c459446f4cd9655d26",
     "url": "/treact/static/css/main.00770f9f.chunk.css"
   },
   {
-    "revision": "ba38373e0382789d5053",
-    "url": "/treact/static/js/2.1a6f6aa5.chunk.js"
+    "revision": "b637b4c858b9e308995c",
+    "url": "/treact/static/js/2.48e025c7.chunk.js"
   },
   {
     "revision": "2e0f7c880216ec2b1e2a5015f5b73720",
-    "url": "/treact/static/js/2.1a6f6aa5.chunk.js.LICENSE.txt"
+    "url": "/treact/static/js/2.48e025c7.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "7c693147dd9397125308",
-    "url": "/treact/static/js/main.cbd16e56.chunk.js"
+    "revision": "a3c459446f4cd9655d26",
+    "url": "/treact/static/js/main.e65241f5.chunk.js"
   },
   {
     "revision": "22991a76a3ffbb3dc684",
@@ -58,10 +58,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "d5a48afbe6bab4933939eff7653758fb",
     "url": "/treact/static/media/LoginPage.d5a48afb.jpeg"
-  },
-  {
-    "revision": "198e3c8da19c8041db9b1702f4efba1f",
-    "url": "/treact/static/media/MainLandingPageHero.198e3c8d.png"
   },
   {
     "revision": "f3822e94600621912441e404b6e9c98f",
@@ -200,16 +196,20 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/treact/static/media/github-icon.61eae8b2.svg"
   },
   {
-    "revision": "20ccfb09e5a6a5360835f862fed25066",
-    "url": "/treact/static/media/handle-icon.20ccfb09.svg"
-  },
-  {
     "revision": "1669eb96c162ff86e8318d02b7f89f24",
     "url": "/treact/static/media/hero-screenshot-1.1669eb96.png"
   },
   {
     "revision": "31c082beabc66a4c2bc8da2da668ef08",
     "url": "/treact/static/media/hero-screenshot-2.31c082be.png"
+  },
+  {
+    "revision": "5a6b26d1831f9f3067e375b8118b3d60",
+    "url": "/treact/static/media/jobvalIconLogo.5a6b26d1.png"
+  },
+  {
+    "revision": "514a65e022a3d1401dcd19e5ba649be6",
+    "url": "/treact/static/media/jobvalLogo.514a65e0.png"
   },
   {
     "revision": "fa5666fa9730a9f927a76edfa9b53e2b",
