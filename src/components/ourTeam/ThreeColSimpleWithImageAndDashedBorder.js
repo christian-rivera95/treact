@@ -52,10 +52,10 @@ export default ({
   subheading = "",
   heading = (
     <>
-      Our<span tw="text-primary-500"> TEAM</span>
+      Nuestro<span tw="text-primary-500"> Equipo</span>
     </>
   ),
-  description = "Jobval was developed by these amazing human being with love and coffee.",
+  description = "Jobval fue desarrollado por estas increíbles personas con ❤ y ☕.",
 }) => {
   const firstRowMembers = [
     {

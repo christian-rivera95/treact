@@ -38,15 +38,16 @@ const Input = tw.input`border-2 px-5 py-3 rounded focus:outline-none font-medium
 const SubmitButton = tw(PrimaryButtonBase)`inline-block lg:ml-6 mt-6 lg:mt-0`;
 
 export default ({
-  subheading = "Contact Us",
+  subheading = "Contáctanos",
   heading = (
     <>
-      Feel free to <span tw="text-primary-500">get in touch</span>
-      <wbr /> with us.
+      Sientete libre de contactarnos para{" "}
+      <span tw="text-primary-500">asistirte</span>
+      <wbr /> en lo que necesites.
     </>
   ),
-  description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-  submitButtonText = "Contact Me",
+  description = "¡Nos encantaría saber de ti! Envíenos su correo electrónico en el siguiente formulario y nos comunicaremos con usted",
+  submitButtonText = "Enviar",
   formAction = "#",
   formMethod = "get",
   textOnLeft = true,
@@ -69,7 +70,7 @@ export default ({
                 <Input
                   type="email"
                   name="email"
-                  placeholder="Your Email Address"
+                  placeholder="example@example.com"
                 />
                 <SubmitButton type="submit">{submitButtonText}</SubmitButton>
               </Form>
