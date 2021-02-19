@@ -65,13 +65,13 @@ const StyledResponsiveVideoEmbed = styled(ResponsiveVideoEmbed)`
 export default () => {
   const navLinks = [
     <NavLinks key={1}>
-      <NavLink href="#About">About</NavLink>
+      <NavLink href="#About">Acerca De</NavLink>
       <NavLink href="#FAQs">FAQs</NavLink>
       <NavLink href="#Blog">Blog</NavLink>
-      <NavLink href="#ContactUs">Contact Us</NavLink>
+      <NavLink href="#ContactUs">Contáctanos</NavLink>
     </NavLinks>,
     <NavLinks key={2}>
-      <PrimaryLink href="/#">Hire Us</PrimaryLink>
+      <PrimaryLink href="/#">Contrátanos</PrimaryLink>
     </NavLinks>,
   ];
 
@@ -82,22 +82,22 @@ export default () => {
         <StyledHeader links={navLinks} />
         <TwoColumn>
           <LeftColumn>
-            <Notification>
+            {/* <Notification>
               We have now launched operations in Europe.
-            </Notification>
+            </Notification> */}
             <Heading>
-              <span>Hire the best</span>
+              <span>Contrata al mejor</span>
               <br />
               <SlantedBackground style={{ color: "#d8c614" }}>
-                Job evaluation
+                equipo de evaluación
               </SlantedBackground>
               <SlantedBackground style={{ color: "#0e134a" }}>
-                and advisory team.
+                y asesoría de puestos
               </SlantedBackground>
             </Heading>
-            <NavLink href="#stories">
+            {/* <NavLink href="#stories">
               <PrimaryAction>Read Customer Stories</PrimaryAction>
-            </NavLink>
+            </NavLink> */}
           </LeftColumn>
           <RightColumn>
             <StyledResponsiveVideoEmbed

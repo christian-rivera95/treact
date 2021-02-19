@@ -34,9 +34,9 @@ const Heading = tw(
 const Description = tw.p`mt-4 text-center md:text-left text-sm md:text-base lg:text-lg font-medium leading-relaxed text-secondary-100`;
 
 const Statistics = tw.div`flex flex-col items-center sm:block text-center md:text-left mt-4`;
-const Statistic = tw.div`text-left sm:inline-block sm:mr-12 last:mr-0 mt-4`;
-const Value = tw.div`font-bold text-lg sm:text-xl lg:text-2xl text-secondary-500 tracking-wide`;
-const Key = tw.div`font-medium text-primary-700`;
+// const Statistic = tw.div`text-left sm:inline-block sm:mr-12 last:mr-0 mt-4`;
+// const Value = tw.div`font-bold text-lg sm:text-xl lg:text-2xl text-secondary-500 tracking-wide`;
+// const Key = tw.div`font-medium text-primary-700`;
 
 const PrimaryButton = tw(
   PrimaryButtonBase
@@ -47,14 +47,14 @@ const DecoratorBlob = styled(SvgDotPattern)((props) => [
 ]);
 
 export default ({
-  subheading = "Our Track Record",
+  subheading = "Nuestro Historial",
   heading = (
     <>
-      We have been doing this <wbr /> since{" "}
+      Hemos estado haciendo esto <wbr /> desde{" "}
       <span tw="text-primary-500">2020.</span>
     </>
   ),
-  description = "We specialize in job appraisal consulting and professional development coaching.",
+  description = "Nos especializamos en consultoría de evaluación de trabajos y coaching de desarrollo profesional.",
   primaryButtonText = "Learn More",
   primaryButtonUrl = "https://timerse.com",
   imageSrc = StatsIllustrationSrc,
@@ -102,12 +102,12 @@ export default ({
             <Heading>{heading}</Heading>
             <Description>{description}</Description>
             <Statistics>
-              {statistics.map((statistic, index) => (
+              {/* {statistics.map((statistic, index) => (
                 <Statistic key={index}>
                   <Value>{statistic.value}</Value>
                   <Key>{statistic.key}</Key>
                 </Statistic>
-              ))}
+              ))} */}
             </Statistics>
             <PrimaryButton as="a" href={primaryButtonUrl}>
               {primaryButtonText}

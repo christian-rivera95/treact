@@ -6,7 +6,7 @@ import {
   SectionHeading as HeadingTitle,
   Subheading,
 } from "components/misc/Headings.js";
-import { PrimaryButton as PrimaryButtonBase } from "components/misc/Buttons.js";
+// import { PrimaryButton as PrimaryButtonBase } from "components/misc/Buttons.js";
 import { ReactComponent as UserIcon } from "feather-icons/dist/icons/user.svg";
 import { ReactComponent as TagIcon } from "feather-icons/dist/icons/tag.svg";
 import { ReactComponent as SvgDecoratorBlob1 } from "../../images/svg-decorator-blob-1.svg";
@@ -36,10 +36,10 @@ const Meta = styled.div`
 `;
 
 const Title = tw.h5`mt-4 leading-snug font-bold text-lg`;
-const Description = tw.p`mt-2 text-sm text-secondary-100`;
-const Link = styled(PrimaryButtonBase).attrs({ as: "a" })`
-  ${tw`inline-block mt-4 text-sm font-semibold`}
-`;
+// const Description = tw.p`mt-2 text-sm text-secondary-100`;
+// const Link = styled(PrimaryButtonBase).attrs({ as: "a" })`
+//   ${tw`inline-block mt-4 text-sm font-semibold`}
+// `;
 
 const DecoratorBlob1 = tw(
   SvgDecoratorBlob1
@@ -106,8 +106,7 @@ export default ({
       url: "https://timerse.com",
     },
   ];
-  // https://i.imgur.com/AXZom46.jpg Andres
-  // https://i.imgur.com/nUUG14n.jpg Obed
+
   return (
     <div id="Blog">
       <Container>

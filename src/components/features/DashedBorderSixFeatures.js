@@ -65,15 +65,30 @@ export default () => {
   const cards = [
     {
       imageSrc: ShieldIconImage,
-      title: "Ads Management",
+
+      title: "Coaching profesional y empresarial",
       description:
-        "We create and manage ads that you need, from creation to deployment. Lorem ipsum donor sit amet consicou.",
+        "Proporcionar orientación, estructura y apoyo a los clientes al analizar el estado actual, trabajo, entorno y demás.",
     },
-    { imageSrc: SupportIconImage, title: "Video Marketing" },
-    { imageSrc: CustomizeIconImage, title: "Customer Relation" },
-    { imageSrc: ReliableIconImage, title: "Product Outreach" },
-    { imageSrc: FastIconImage, title: "PR Campaign" },
-    { imageSrc: SimpleIconImage, title: "Product Expansion" },
+    {
+      imageSrc: SupportIconImage,
+      title: "Capacitación para entrevista profesional",
+      description:
+        "Revisión del perfil profesional para identificar mejoras y posibles respuestas que le llevaran a destacar en una entrevista. Preparación para los posibles escenarios del proceso de selección.",
+    },
+    {
+      imageSrc: CustomizeIconImage,
+      title: "Valoración de puestos empresarial",
+      description:
+        "Cálculo sistemático y cuantitativo para evaluar el valor relativo del puesto laboral con el fin de establecer una estructura salarial racional.",
+    },
+    {
+      imageSrc: ReliableIconImage,
+      title: "Análisis de la gestión de compensación",
+
+      description:
+        "Administramos, analizamos y determinamos el salario, los incentivos y los beneficios que recibe cada empleado.",
+    },
   ];
 
   return (
@@ -81,7 +96,7 @@ export default () => {
       <Container>
         <ThreeColumnContainer>
           <Heading>
-            Our Professional <span tw="text-primary-500">Services</span>
+            Nuestros Servicios <span tw="text-primary-500">Profesionales</span>
           </Heading>
           {cards.map((card, i) => (
             <Column key={i}>

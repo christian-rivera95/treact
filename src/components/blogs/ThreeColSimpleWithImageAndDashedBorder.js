@@ -52,41 +52,47 @@ export default ({
   subheading = "Blog",
   heading = (
     <>
-      We Love <span tw="text-primary-500">Writing.</span>
+      Artículos de <span tw="text-primary-500">Interés.</span>
     </>
   ),
-  description = "Some amazing blog posts that are written by even more amazing people.",
+  description = "Algunas publicaciones de blog increíbles escritas por personas aún más increíbles.",
 }) => {
   const blogPosts = [
     {
       imageSrc:
         "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80",
-      author: "Adam Wathan",
-      category: "SEO",
-      title: "Optimizing your website for your main keyword",
+      author: "Orientación Universitarias",
+      authorUrl: "https://orientacion.universia.net.co/index.html",
+      category: "Tips y consejos",
+      title: "Consejos prácticos para mejorar tu perfil profesional",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      url: "https://reddit.com",
+        "El perfil es un espacio en el que describes tus habilidades y las tareas que estás en capacidad de asumir y liderar en una organización, además de tu formación académica, trayectoria y logros obtenidos en tus anteriores cargos.",
+      url:
+        "https://orientacion.universia.net.co/infodetail/orientacion/consejos/consejos-practicos-para-mejorar-tu-perfil-profesional--3976.html",
     },
     {
       imageSrc:
-        "https://images.unsplash.com/photo-1479660095429-2cf4e1360472?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80",
-      author: "Owais Khan",
-      category: "Advertising",
-      title: "Creating The perfect advertisement campaign",
+        "https://thumbor.forbes.com/thumbor/fit-in/1200x0/filters%3Aformat%28jpg%29/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F5e33ab078b6cf300071d7cd7%2F0x0.jpg",
+      author: "Rodrigo Ricardo",
+      authorUrl: "/",
+      category: "Informativo",
+      title: "Las habilidades profesionales más valiosas de 2021 / 2024",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      url: "https://timerse.com",
+        "El mercado laboral está en constante evolución y, a medida que algunas profesiones pierden popularidad, otras obtienen una ventaja.",
+      url:
+        "https://exonegocios.com/las-habilidades-profesionales-mas-valiosas-de-2021-2024/",
     },
     {
       imageSrc:
-        "https://images.unsplash.com/photo-1579869847514-7c1a19d2d2ad?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
-      author: "Steve Schoger",
-      category: "Social Media",
-      title: "Efficient management of your social media assets",
+        "https://destinonegocio.com/wp-content/uploads/2015/07/ico-destinonegocio-coaching-profesional-istock-getty-images-849x430.jpg",
+      author: "Destinonegocio",
+      authorUrl: "https://destinonegocio.com/pe/",
+      category: "Gestión",
+      title: "Entiende por qué es importante buscar coaching profesional",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      url: "https://timerse.com",
+        "Explore sus capacidades de alcanzar resultados positivos en el ámbito profesional.",
+      url:
+        "https://destinonegocio.com/pe/gestion-pe/entiende-por-que-es-importante-buscar-coaching-profesional/",
     },
   ];
   return (
@@ -107,7 +113,10 @@ export default ({
                     <MetaContainer>
                       <Meta>
                         <UserIcon />
-                        <div>{post.author}</div>
+
+                        <div>
+                          <a href={post.authorUrl}>{post.author}</a>
+                        </div>
                       </Meta>
                       <Meta>
                         <TagIcon />
@@ -116,7 +125,7 @@ export default ({
                     </MetaContainer>
                     <Title>{post.title}</Title>
                     <Description>{post.description}</Description>
-                    <Link href={post.url}>Read Post</Link>
+                    <Link href={post.url}>Leer Artículo</Link>
                   </Details>
                 </Card>
               </Column>
