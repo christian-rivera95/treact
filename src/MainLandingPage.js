@@ -1,11 +1,15 @@
 import React, { useState, useEffect } from "react";
-import AnchorLink from 'react-anchor-link-smooth-scroll'
+import AnchorLink from "react-anchor-link-smooth-scroll";
 import { Rnd } from "react-rnd";
 import { motion } from "framer-motion";
 
 import { components } from "ComponentRenderer.js";
 import AnimationRevealPage from "helpers/AnimationRevealPage.js";
-import { Container, Content2Xl, ContentWithVerticalPadding } from "components/misc/Layouts";
+import {
+  Container,
+  Content2Xl,
+  ContentWithVerticalPadding,
+} from "components/misc/Layouts";
 import tw from "twin.macro";
 import styled from "styled-components";
 import { css } from "styled-components/macro";
@@ -16,7 +20,7 @@ import { PrimaryButton as PrimaryButtonBase } from "components/misc/Buttons.js";
 
 import { ReactComponent as CheckboxIcon } from "feather-icons/dist/icons/check-circle.svg";
 import { ReactComponent as HandleIcon } from "images/handle-icon.svg";
-import { ReactComponent as ArrowRightIcon} from "images/arrow-right-3-icon.svg";
+import { ReactComponent as ArrowRightIcon } from "images/arrow-right-3-icon.svg";
 
 import heroScreenshotImageSrc from "images/demo/MainLandingPageHero.png";
 import logo from "images/logo.svg";
@@ -26,11 +30,17 @@ import useInView from "use-in-view";
 const Row = tw.div`flex`;
 const NavRow = tw(Row)`flex flex-col sm:flex-row items-center justify-between`;
 const DownloadLink = tw.a`mt-8 sm:mt-0 transition duration-300 font-medium pb-1 border-b-2 text-primary-500 border-purple-300 hocus:border-primary-500`;
-const HeroRow = tw(Row)`flex-col lg:flex-row justify-between items-center py-20 lg:py-24 max-w-screen-2xl mx-auto`;
+const HeroRow = tw(
+  Row
+)`flex-col lg:flex-row justify-between items-center py-20 lg:py-24 max-w-screen-2xl mx-auto`;
 
 const Column = tw.div``;
-const TextColumn = tw(Column)`mx-auto lg:mr-0 max-w-2xl lg:max-w-xl xl:max-w-2xl flex-shrink-0`;
-const Heading = tw(HeadingBase)`text-center lg:text-left text-primary-900 leading-snug`;
+const TextColumn = tw(
+  Column
+)`mx-auto lg:mr-0 max-w-2xl lg:max-w-xl xl:max-w-2xl flex-shrink-0`;
+const Heading = tw(
+  HeadingBase
+)`text-center lg:text-left text-primary-900 leading-snug`;
 const Description = tw(
   DescriptionBase
 )`mt-4 text-center lg:text-left lg:text-base text-gray-700 max-w-lg mx-auto lg:mx-0`;
@@ -52,25 +62,32 @@ const Image = tw.img`max-w-full rounded-t sm:rounded`;
 
 const SectionContainer = tw(ContentWithVerticalPadding)``;
 const SectionHeading = tw(HeadingBase)`text-primary-900`;
-const SectionDescription = tw(DescriptionBase)`text-center mx-auto text-gray-600 max-w-4xl`;
+const SectionDescription = tw(
+  DescriptionBase
+)`text-center mx-auto text-gray-600 max-w-4xl`;
 
 const PreviewCards = tw.div`flex flex-wrap -mr-12`;
 const PreviewCardContainer = tw.div`mt-24 mx-auto md:mx-0 max-w-lg w-full md:w-1/2 lg:w-1/3 pr-12`;
 const PreviewCard = tw(motion.a)`block rounded-lg shadow-raised`;
 const PreviewCardImageContainer = tw.div`rounded-t-lg border-0 border-b-0`;
 const PreviewCardImage = styled(motion.div)`
-  ${props => css`background-image: url("${props.imageSrc}");`}
+  ${(props) =>
+    css`
+      background-image: url("${props.imageSrc}");
+    `}
   ${tw`h-128 md:h-144 bg-cover bg-left-top`}
 `;
-const PreviewButton = tw(PrimaryButtonBase)`w-full rounded-b-lg rounded-t-none py-5 font-semibold`;
+const PreviewButton = tw(
+  PrimaryButtonBase
+)`w-full rounded-b-lg rounded-t-none py-5 font-semibold`;
 
 const ComponentsContainer = tw.div`mt-24`;
 const ComponentsType = tw.h3`text-4xl font-black text-primary-500 border-b-4 border-primary-500 inline-block`;
 const Components = tw.div``;
 const Component = tw.div`mt-12 border rounded-lg bg-white`;
-const ComponentHeading = tw.div`px-8 py-5 border-b flex flex-col sm:flex-row justify-between items-center`
+const ComponentHeading = tw.div`px-8 py-5 border-b flex flex-col sm:flex-row justify-between items-center`;
 const ComponentName = tw.h6`text-lg`;
-const ComponentPreviewLink = tw.a`mt-4 sm:mt-0 text-primary-500 hocus:text-primary-900 transition duration-300 font-semibold flex items-center`
+const ComponentPreviewLink = tw.a`mt-4 sm:mt-0 text-primary-500 hocus:text-primary-900 transition duration-300 font-semibold flex items-center`;
 const ComponentContent = tw.div`flex justify-between overflow-hidden rounded-b-lg bg-gray-600 relative`;
 const ResizableBox = styled(Rnd)`
   ${tw`relative! bg-white pr-4`}
@@ -89,21 +106,24 @@ export default ({
   buttonRoundedCss = "",
   landingPages = components.landingPages,
   innerPages = components.innerPages,
-  blocks = components.blocks
+  blocks = components.blocks,
 }) => {
   const previewImageAnimationVariants = {
     rest: {
-      backgroundPositionY: "0%"
+      backgroundPositionY: "0%",
     },
     hover: {
       backgroundPositionY: "100%",
-      transition: { type: "tween", ease: "linear", duration: 5 }
-    }
+      transition: { type: "tween", ease: "linear", duration: 5 },
+    },
   };
 
   const noOfLandingPages = Object.keys(landingPages).length;
   const noOfInnerPages = Object.keys(innerPages).length;
-  const noOfComponentBlocks = Object.values(blocks).reduce((acc, block) => acc + Object.keys(block.elements).length, 0);
+  const noOfComponentBlocks = Object.values(blocks).reduce(
+    (acc, block) => acc + Object.keys(block.elements).length,
+    0
+  );
 
   features = features || [
     `${noOfLandingPages} Landing Page Demos`,
@@ -111,7 +131,7 @@ export default ({
     `${noOfComponentBlocks} Components`,
     "Lifetime Updates",
     "Fully Responsive",
-    "Fully Customizable"
+    "Fully Customizable",
   ];
 
   return (
@@ -121,7 +141,7 @@ export default ({
           <NavRow>
             <LogoLink href="/">
               <img src={logo} alt="" />
-              Treact
+              Treactadkfhaskjdhkjasds
             </LogoLink>
             <DownloadLink target="_blank" href="https://gum.co/QaruQ">
               Download Now
@@ -131,9 +151,10 @@ export default ({
             <TextColumn>
               <Heading>Modern React Templates for every need.</Heading>
               <Description>
-                Easily customizable modern React Templates which are also lightweight and simple to setup. All
-                components are modular and fully responsive for great mobile experience as well as big desktop screens. Brand Colors
-                are also fully customizable.
+                Easily customizable modern React Templates which are also
+                lightweight and simple to setup. All components are modular and
+                fully responsive for great mobile experience as well as big
+                desktop screens. Brand Colors are also fully customizable.
               </Description>
               <FeatureList>
                 {features.map((feature, index) => (
@@ -161,13 +182,21 @@ export default ({
           <SectionContainer id="landingPageDemos">
             <SectionHeading>Landing Pages</SectionHeading>
             <SectionDescription>
-              We have {noOfLandingPages} premade landing pages. Click on the "View Live Demo" button to see them in
-              action. Customizing or Creating your own custom landing page is really simple by using our UI components.
+              We have {noOfLandingPages} premade landing pages. Click on the
+              "View Live Demo" button to see them in action. Customizing or
+              Creating your own custom landing page is really simple by using
+              our UI components.
             </SectionDescription>
             <PreviewCards>
               {Object.entries(landingPages).map(([pageName, page], index) => (
                 <PreviewCardContainer key={index}>
-                  <PreviewCard initial="rest" animate="rest" whileHover="hover" href={page.url} target="_blank">
+                  <PreviewCard
+                    initial="rest"
+                    animate="rest"
+                    whileHover="hover"
+                    href={page.url}
+                    target="_blank"
+                  >
                     <PreviewCardImageContainer>
                       <PreviewCardImage
                         transition={{ type: "tween" }}
@@ -184,17 +213,28 @@ export default ({
           <SectionContainer>
             <SectionHeading>Inner Pages</SectionHeading>
             <SectionDescription>
-              We also provide {noOfInnerPages} additional inner pages for your various needs like a signup, login,
-              pricing, about us, contact, blog etc. To view them in action click the "View Live Demo" button.
+              We also provide {noOfInnerPages} additional inner pages for your
+              various needs like a signup, login, pricing, about us, contact,
+              blog etc. To view them in action click the "View Live Demo"
+              button.
             </SectionDescription>
             <PreviewCards>
               {Object.entries(innerPages).map(([pageName, page], index) => (
                 <PreviewCardContainer key={index}>
-                  <PreviewCard initial="rest" animate="rest" whileHover="hover" href={page.url} target="_blank">
+                  <PreviewCard
+                    initial="rest"
+                    animate="rest"
+                    whileHover="hover"
+                    href={page.url}
+                    target="_blank"
+                  >
                     <PreviewCardImageContainer>
                       <PreviewCardImage
                         transition={{ type: "tween" }}
-                        variants={!page.scrollAnimationDisabled && previewImageAnimationVariants}
+                        variants={
+                          !page.scrollAnimationDisabled &&
+                          previewImageAnimationVariants
+                        }
                         imageSrc={page.imageSrc}
                       />
                     </PreviewCardImageContainer>
@@ -208,9 +248,10 @@ export default ({
           <SectionContainer id="componentDemos">
             <SectionHeading>Component Blocks</SectionHeading>
             <SectionDescription>
-              We also provide {noOfComponentBlocks} components along with the premade landing pages so you can create your own landing page
-              within minutes as you see fit. You can combine these components to create 1000s of unique attractive web
-              pages.
+              We also provide {noOfComponentBlocks} components along with the
+              premade landing pages so you can create your own landing page
+              within minutes as you see fit. You can combine these components to
+              create 1000s of unique attractive web pages.
             </SectionDescription>
             <BlocksRenderer blocks={Object.values(blocks)} />
           </SectionContainer>
@@ -220,30 +261,37 @@ export default ({
   );
 };
 
-const BlocksRenderer = ({blocks}) => {
-  const [lastVisibleBlockIndex, setLastVisibleBlockIndex] = useState(0)
+const BlocksRenderer = ({ blocks }) => {
+  const [lastVisibleBlockIndex, setLastVisibleBlockIndex] = useState(0);
 
   const updateLastVisibleBlockIndex = (index) => {
-    console.log("LAST WAS ", lastVisibleBlockIndex)
-    if(index > lastVisibleBlockIndex)
-      setLastVisibleBlockIndex(index)
-  }
+    console.log("LAST WAS ", lastVisibleBlockIndex);
+    if (index > lastVisibleBlockIndex) setLastVisibleBlockIndex(index);
+  };
 
   return (
     <ComponentsContainer>
-      {blocks.map((block, index) => ((lastVisibleBlockIndex+1) >= index) && <Block key={index} components={block} notifyIsVisible={() => updateLastVisibleBlockIndex(index)} />)}
+      {blocks.map(
+        (block, index) =>
+          lastVisibleBlockIndex + 1 >= index && (
+            <Block
+              key={index}
+              components={block}
+              notifyIsVisible={() => updateLastVisibleBlockIndex(index)}
+            />
+          )
+      )}
     </ComponentsContainer>
-  )
-}
+  );
+};
 
-const Block = ({notifyIsVisible, components}) => {
+const Block = ({ notifyIsVisible, components }) => {
   const offset = 30;
   const [ref, inView] = useInView(offset);
 
   useEffect(() => {
-    if(inView)
-      notifyIsVisible()
-  }, [inView, notifyIsVisible])
+    if (inView) notifyIsVisible();
+  }, [inView, notifyIsVisible]);
 
   const ResizeHandle = (
     <ResizeHandleButton>
@@ -253,9 +301,10 @@ const Block = ({notifyIsVisible, components}) => {
 
   const componentBlockRefs = {};
 
-  const updateComponentBlockIframeHeight = iframe => {
+  const updateComponentBlockIframeHeight = (iframe) => {
     iframe.style.height = "auto";
-    iframe.style.height = (iframe.contentWindow.document.body.scrollHeight) + "px";
+    iframe.style.height =
+      iframe.contentWindow.document.body.scrollHeight + "px";
   };
 
   return (
@@ -266,28 +315,39 @@ const Block = ({notifyIsVisible, components}) => {
           <Component key={componentIndex}>
             <ComponentHeading>
               <ComponentName>{component.name}</ComponentName>
-              <ComponentPreviewLink className="group" href={component.url} target="_blank">View Live Demo <ArrowRightIcon tw="transition duration-300 transform group-hover:translate-x-px ml-2 w-4 h-4" /></ComponentPreviewLink>
+              <ComponentPreviewLink
+                className="group"
+                href={component.url}
+                target="_blank"
+              >
+                View Live Demo{" "}
+                <ArrowRightIcon tw="transition duration-300 transform group-hover:translate-x-px ml-2 w-4 h-4" />
+              </ComponentPreviewLink>
             </ComponentHeading>
             <ComponentContent>
               <ResizableBox
                 minWidth={420}
                 default={{
                   width: "100%",
-                  height: "100%"
+                  height: "100%",
                 }}
                 bounds="parent"
                 disableDragging={true}
                 enableResizing={{ right: true }}
                 resizeHandleComponent={{ right: ResizeHandle }}
                 resizeHandleWrapperClass={`resizeHandleWrapper`}
-                onResize={() => updateComponentBlockIframeHeight(componentBlockRefs[component.url])}
+                onResize={() =>
+                  updateComponentBlockIframeHeight(
+                    componentBlockRefs[component.url]
+                  )
+                }
               >
                 <iframe
                   src={component.url}
                   title="Hero"
                   width="100%"
-                  ref={ref => (componentBlockRefs[component.url] = ref)}
-                  onLoad={e => updateComponentBlockIframeHeight(e.target)}
+                  ref={(ref) => (componentBlockRefs[component.url] = ref)}
+                  onLoad={(e) => updateComponentBlockIframeHeight(e.target)}
                 />
               </ResizableBox>
             </ComponentContent>
@@ -295,5 +355,5 @@ const Block = ({notifyIsVisible, components}) => {
         ))}
       </Components>
     </div>
-  )
-}
+  );
+};
