@@ -108,7 +108,7 @@ export default ({
   ];
 
   return (
-    <div id="Blog">
+    <div id="OurTeam">
       <Container>
         <Content>
           <HeadingInfoContainer>

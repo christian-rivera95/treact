@@ -38,11 +38,11 @@ export default () => {
             <LogoText>Jobval</LogoText>
           </LogoContainer>
           <LinksContainer>
-            <Link href="#">Home</Link>
-            <Link href="#">About</Link>
-            <Link href="#">Contact Us</Link>
-            <Link href="#">Blog</Link>
-            <Link href="#">Reviews</Link>
+            <Link href="#">Inicio</Link>
+            <Link href="#About">Acerca de</Link>
+            <Link href="#FAQs">FAQs</Link>
+            <Link href="#Blog">Blog</Link>
+            <Link href="#OurTeam">Nuestro Equipo</Link>
           </LinksContainer>
           <SocialLinksContainer>
             <SocialLink href="https://facebook.com">
