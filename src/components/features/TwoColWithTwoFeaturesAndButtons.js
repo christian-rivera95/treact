@@ -68,7 +68,7 @@ export default ({
       <br />
       <br />
       "El crecimiento nunca es una mera casualidad; es el resultado de fuerzas
-      que trabajan juntas". -James Cash Penney")
+      que trabajan juntas". -James Cash Penney"
     </p>
   ),
   primaryButtonText = "See Our Portfolio",
