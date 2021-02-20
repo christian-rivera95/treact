@@ -41,7 +41,7 @@ export default ({
   subheading = "Contáctanos",
   heading = (
     <>
-      Sientete libre de contactarnos para{" "}
+      Siéntete libre de contactarnos para{" "}
       <span tw="text-primary-500">asistirte</span>
       <wbr /> en lo que necesites.
     </>

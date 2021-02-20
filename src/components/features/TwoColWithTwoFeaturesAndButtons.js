@@ -60,7 +60,17 @@ export default ({
       <span tw="text-primary-500">profesional</span>.
     </>
   ),
-  description = "",
+  description = (
+    <p>
+      "Estamos enfocados como empresa en trabajar en equipo para brindar el
+      mejor servicio e impactar en el desarrollo de los profesionales y
+      empresas.
+      <br />
+      <br />
+      "El crecimiento nunca es una mera casualidad; es el resultado de fuerzas
+      que trabajan juntas". -James Cash Penney")
+    </p>
+  ),
   primaryButtonText = "See Our Portfolio",
   primaryButtonUrl = "https://timerse.com",
   features = null,
