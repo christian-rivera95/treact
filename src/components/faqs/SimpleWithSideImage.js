@@ -57,24 +57,58 @@ export default ({
    */
   const defaultFaqs = [
     {
-      question: "Is lunch provided free of cost ?",
-      answer:
-        "Yes, it is, if you have a membership with us. Otherwise it is charged as per the menu. Some limits do apply as to how much items can be included in your lunch. This limit is enough for any one person and merely exists to discourage abusal of the system.",
+      question:
+        "¿Qué beneficios me trae el coaching profesional y empresarial?",
+      answer: (
+        <p>
+          1) Potencia el talento individual.
+          <br />
+          2) Incrementa la creatividad.
+          <br />
+          3) Reduce estados de estrés y ansiedad laboral.
+          <br />
+          4) Aumenta la productividad.
+          <br />
+          5) Favorece el trabajo en equipo.
+        </p>
+      ),
     },
     {
-      question: "Do you have 2 Bedroom suites ?",
-      answer:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      question:
+        "¿Qué función desempeña la capacitación para entrevista profesional?",
+      answer: (
+        <p>
+          1) Te prepara para ser parte de un proceso de selección laboral.
+          <br />
+          2) Conocerás todos los elementos que debes practicar y pulir para
+          participar en una entrevista de trabajo.
+          <br />
+          3) Establecerás tu perfil profesional a futuro para tener mayor
+          seguridad al ser entrevistado.
+          <br />
+          4) Identificarás las cosas que debes hacer, y lo que no debes hacer en
+          una entrevista ya sea presencial, videollamada o telefónica.
+        </p>
+      ),
     },
     {
-      question: "Are Wi-Fi costs included in the price ?",
+      question: "¿Qué es necesaria una valoración de puesto empresarial?",
       answer:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "Parte de la base de una empresa es que cada puesto de trabajo tiene su valor individual. Para remunerar con equidad al ocupante de un puesto de trabajo, se requiere conocer el valor de ese puesto con relación a los demás. Por ende,  la valoración de puestos es fundamental pues es un proceso que analiza y compara el contenido de los puestos de trabajo, para organizar un sistema de remuneración óptimo.",
     },
     {
-      question: "Where can I reach you for support ?",
-      answer:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      question:
+        "¿Para qué nos sirve el análisis de la gestión de compensación?",
+      answer: (
+        <p>
+          1) Mantener a la empresa competitiva en el mercado laboral.
+          <br />
+          2) Motivar el desempeño futuro de los empleados.
+          <br />
+          3) Recompensar el desempeño de los colaboradores para su propia
+          satisfacción y la de la organización.
+        </p>
+      ),
     },
   ];
 

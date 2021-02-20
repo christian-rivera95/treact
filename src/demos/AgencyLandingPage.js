@@ -63,7 +63,7 @@ export default () => (
       subheading="FAQs"
       heading={
         <>
-          Do you have <span tw="text-primary-500">Questions ?</span>
+          ¿Tienes <span tw="text-primary-500">Preguntas ?</span>
         </>
       }
     />
