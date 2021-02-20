@@ -100,7 +100,7 @@ export default ({
       imageSrc: "https://i.imgur.com/nUUG14n.jpg",
       author: "Obed Merlos",
       category: "CHRO",
-      title: "Ing. Sistemas Computacionales",
+      title: "Lic. Administración Industrial",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       url: "https://timerse.com",

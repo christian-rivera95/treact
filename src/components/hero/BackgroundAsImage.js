@@ -34,7 +34,7 @@ const TwoColumn = tw.div`pt-24 pb-32 px-4 flex justify-between items-center flex
 const LeftColumn = tw.div`flex flex-col items-center lg:block`;
 const RightColumn = tw.div`w-full sm:w-5/6 lg:w-1/2 mt-16 lg:mt-0 lg:pl-8`;
 
-const Heading = styled.h1`
+const Heading = styled.h3`
   ${tw`text-3xl text-center lg:text-left sm:text-4xl lg:text-5xl xl:text-6xl font-black text-gray-100 leading-none`}
   span {
     ${tw`inline-block mt-2`}
@@ -87,13 +87,15 @@ export default () => {
               We have now launched operations in Europe.
             </Notification> */}
             <Heading>
-              <span>Contrata al mejor</span>
-              <br />
-              <SlantedBackground style={{ color: "#d8c614" }}>
-                equipo de evaluación
+              <SlantedBackground style={{ color: "#0e134a", fontSize: "37px" }}>
+                Contrata al mejor equipo
               </SlantedBackground>
-              <SlantedBackground style={{ color: "#0e134a" }}>
-                y asesoría de puestos
+              <br />
+              <SlantedBackground style={{ color: "#d8c614", fontSize: "37px" }}>
+                de evaluación de puestos
+              </SlantedBackground>
+              <SlantedBackground style={{ color: "#0e134a", fontSize: "37px" }}>
+                y asesoría profesional
               </SlantedBackground>
             </Heading>
             {/* <NavLink href="#stories">
