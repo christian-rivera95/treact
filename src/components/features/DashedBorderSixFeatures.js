@@ -66,9 +66,9 @@ export default () => {
     {
       imageSrc: ShieldIconImage,
 
-      title: "Coaching profesional y empresarial",
+      title: "Coaching profesional",
       description:
-        "Proporcionar orientación, estructura y apoyo a los clientes al analizar el estado actual, trabajo, entorno y demás.",
+        "Proporcionar orientación, estructura y apoyo a los clientes al analizar el estado actual, entorno y demás.",
     },
     {
       imageSrc: SupportIconImage,
@@ -78,16 +78,9 @@ export default () => {
     },
     {
       imageSrc: CustomizeIconImage,
-      title: "Valoración de puestos empresarial",
+      title: "Formato de cotización de proyectos",
       description:
-        "Cálculo sistemático y cuantitativo para evaluar el valor relativo del puesto laboral con el fin de establecer una estructura salarial racional.",
-    },
-    {
-      imageSrc: ReliableIconImage,
-      title: "Análisis de la gestión de compensación",
-
-      description:
-        "Administramos, analizamos y determinamos el salario, los incentivos y los beneficios que recibe cada empleado.",
+        "Ayudamos a nuestro clientes a desglozar la estructura de un proyecto y valorar su costo.",
     },
   ];
 

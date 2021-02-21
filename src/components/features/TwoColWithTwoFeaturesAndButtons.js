@@ -6,7 +6,7 @@ import {
   SectionHeading,
   Subheading as SubheadingBase,
 } from "components/misc/Headings.js";
-import { PrimaryButton as PrimaryButtonBase } from "components/misc/Buttons.js";
+// import { PrimaryButton as PrimaryButtonBase } from "components/misc/Buttons.js";
 import { ReactComponent as BriefcaseIcon } from "feather-icons/dist/icons/briefcase.svg";
 import { ReactComponent as MoneyIcon } from "feather-icons/dist/icons/dollar-sign.svg";
 import TeamIllustrationSrc from "images/team-illustration-2.svg";
@@ -62,9 +62,8 @@ export default ({
   ),
   description = (
     <p>
-      "Estamos enfocados como empresa en trabajar en equipo para brindar el
-      mejor servicio e impactar en el desarrollo de los profesionales y
-      empresas.
+      Estamos enfocados como empresa en trabajar en equipo para brindar el mejor
+      servicio e impactar en el desarrollo de los profesionales y empresas.
       <br />
       <br />
       "El crecimiento nunca es una mera casualidad; es el resultado de fuerzas

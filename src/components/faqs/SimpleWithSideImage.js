@@ -45,7 +45,7 @@ const Answer = motion.custom(
 export default ({
   subheading = "",
   heading = "Questions",
-  description = "Here are some frequently asked questions about our hotels from our loving customers. Should you have any other questions, feel free to reach out via the contact form below.",
+  description = "Estas son algunas de las preguntas frecuentes sobre nuestros hoteles de nuestros amados clientes. Si tiene alguna otra pregunta, no dude en comunicarse a través del formulario de contacto a continuación.",
   imageSrc = "https://images.unsplash.com/photo-1579427421635-a0015b804b2e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1024&q=80",
   imageContain = false,
   imageShadow = true,
