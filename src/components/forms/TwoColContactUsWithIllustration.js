@@ -72,7 +72,15 @@ export default ({
                   name="email"
                   placeholder="example@example.com"
                 />
-                <SubmitButton type="submit">{submitButtonText}</SubmitButton>
+
+                <SubmitButton type="submit">
+                  <a
+                    href="#"
+                    download="Habilidades Profesionales_2021_Jobval.pdf"
+                  >
+                    {submitButtonText}
+                  </a>
+                </SubmitButton>
               </Form>
             </TextContent>
           </TextColumn>
