@@ -4,6 +4,7 @@ import axios from "axios";
 
 function App() {
   const [email, setEmail] = useState("");
+  const [submitedForm, setSubmitedForm] = useState(false);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -17,12 +18,13 @@ function App() {
       )
       .then((response) => {
         console.log(response);
+        setSubmitedForm(true);
       });
   };
 
   return (
     <Container fluid className="container">
-      {email ? (
+      {submitedForm ? (
         <>
           <Header as="h2">Gracias!</Header>
           <label>
