@@ -5,11 +5,13 @@ import axios from "axios";
 function App() {
   const [email, setEmail] = useState("");
   const [submitedForm, setSubmitedForm] = useState(false);
+  const [submitedRequest, setSubmitedRequest] = useState(false);
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
     const objt = { email };
+    setSubmitedForm(true);
 
     axios
       .post(
@@ -18,13 +20,13 @@ function App() {
       )
       .then((response) => {
         console.log(response);
-        setSubmitedForm(true);
+        setSubmitedRequest(true);
       });
   };
 
   return (
     <Container fluid className="container">
-      {submitedForm ? (
+      {submitedRequest ? (
         <>
           <Header as="h2">Gracias!</Header>
           <label>
@@ -43,7 +45,12 @@ function App() {
             />
           </Form.Field>
 
-          <Button color="violet" type="submit" onClick={handleSubmit}>
+          <Button
+            color="violet"
+            type="submit"
+            disabled={submitedForm}
+            onClick={handleSubmit}
+          >
             Submit
           </Button>
         </Form>
