@@ -2,10 +2,15 @@ import React from "react";
 import tw from "twin.macro";
 import styled from "styled-components";
 import { css } from "styled-components/macro"; //eslint-disable-line
-import { SectionHeading, Subheading as SubheadingBase } from "components/misc/Headings.js";
+import {
+  SectionHeading,
+  Subheading as SubheadingBase,
+} from "components/misc/Headings.js";
 import { SectionDescription } from "components/misc/Typography.js";
-import { PrimaryButton as PrimaryButtonBase } from "components/misc/Buttons.js";
-import { Container as ContainerBase, ContentWithPaddingXl as ContentBase } from "components/misc/Layouts.js";
+import {
+  Container as ContainerBase,
+  ContentWithPaddingXl as ContentBase,
+} from "components/misc/Layouts.js";
 import { ReactComponent as CheckboxIcon } from "images/checkbox-circle.svg";
 
 const Container = tw(ContainerBase)`bg-primary-900 text-gray-100 -mx-8 px-8`;
@@ -61,63 +66,75 @@ const PlanFeatures = styled.ul`
   }
 `;
 
-const PlanAction = tw.div`mt-4`;
-const ActionButton = styled(PrimaryButtonBase)`
-  ${tw`block text-center text-sm font-semibold tracking-wider w-full text-gray-100 bg-primary-500 px-6 py-4 rounded hover:bg-primary-700 focus:shadow-outline focus:outline-none transition-colors duration-300`}
-`;
-
 const WhiteBackgroundOverlay = tw.div`absolute inset-x-0 bottom-0 h-1/6 lg:h-1/3 bg-white z-0`;
 
 export default ({
   subheading = "",
-  heading = "Affordable Pricing",
-  description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  heading = "Precios asequibles",
+  description = "",
   plans = null,
-  primaryButtonText = "Create Server"
+  primaryButtonText = "Create Server",
 }) => {
   const defaultPlans = [
     {
-      name: "Personal",
-      price: ["$9", ".99/month"],
-      oldPrice: "$11.99",
-      description: "Perfect for when you want to host your personal blog or a hobby side project.",
-      features: ["2 Core Xeon CPU", "1 GB RAM", "30 GB SSD", "1 TB Transfer", "99.9% Uptime"],
-      url: "https://google.com"
-    },
-    {
-      name: "Business",
-      price: ["$15", ".99/month"],
-      oldPrice: "$19.99",
-      description: "Perfect for hosting blogs with lots of traffic or heavy development projects",
+      name: "Capacitación para Entrevista",
+      price: ["$39", ".99/month"],
+      oldPrice: "$69.99",
+      description:
+        "Perfecto para desarrollar confianza en tus futuras entrevistas.",
       features: [
-        "4 Core Xeon CPU",
-        "2 GB RAM",
-        "100 GB SSD",
-        "3 TB Transfer",
-        "99.9% Uptime",
-        "Free Domain & SSL",
-        "Free DNS Management"
+        "Manejo de preguntas difíciles.",
+        "Asesoría profesional del currículum vitae.",
+        "Desarrollo personal de habilidades y capacidades comunicativas.",
+        "1 Sesión personalizada de 1 hora.",
       ],
       url: "https://google.com",
-      featured: "Most Popular"
     },
     {
-      name: "Enterprise",
-      price: ["$25", ".99/month"],
-      oldPrice: "$29.99",
-      description: "Perfect for hosting production websites & API services with high traffic load",
+      name: "Coaching Profesional",
+      price: ["$39", ".99/month"],
+      oldPrice: "$69.99",
+      description:
+        "El profesional de coaching busca analizar a dónde quiere llegar el cliente y lo orienta para recorrer este camino",
       features: [
-        "8 Core Xeon CPU",
-        "8 GB RAM",
-        "300 GB SSD",
-        "Unlimited Transfer",
-        "99.99% Uptime",
-        "Free Domain & SSL",
-        "Free DNS Management",
-        "Free Offsite Backup"
+        "Fortalecer las características clave de un  líder.",
+        "Aumentar el rendimiento personal y la capacidad de trabajo en equipo.",
+        "Coaching tipo láser sobre temas específicos.",
+        "Análisis personalizado a través de encuestas 360 y psicométricas.",
+        "1 Sesión personalizada de 1 hora.",
       ],
-      url: "https://google.com"
-    }
+      url: "https://google.com",
+    },
+    {
+      name: "Cotización de Proyectos",
+      price: ["$39", ".99/month"],
+      oldPrice: "$69.99",
+      description:
+        "Te ayudamos a definir la estructura y elaboración de un proyecto pagado por hora",
+      features: [
+        "Organización de cifras monetarias.",
+        "Soporte de lo acordado en acuerdos comerciales.",
+        "Soporte para concretar negociación para cierre de la misma.",
+        "Esquema de negociación de descuentos.",
+        "1 Sesión personalizada de 1 hora.",
+      ],
+      url: "https://google.com",
+      featured: "Most Popular",
+    },
+    {
+      name: "Premium",
+      price: ["$119", ".99/month"],
+      oldPrice: "$139.99",
+      description: "Aprovecha todos los beneficios simultáneamente",
+      features: [
+        "Asesoría para entrevistas, cotización de proyecto y coaching profesional.",
+        "Definición de personalidad y manejo de presión.",
+        "Coaching intensivo.",
+        "Poder de Negociación.",
+        "4 Sesiones personalizadas de 1 hora.",
+      ],
+      url: "https://google.com",
+    },
   ];
 
   if (!plans) plans = defaultPlans;
@@ -136,14 +153,18 @@ export default ({
               <PlanHeader>
                 <span className="nameAndFeaturedContainer">
                   <span className="name">{plan.name}</span>
-                  {plan.featured && <span className="featuredText">{plan.featured}</span>}
+                  {plan.featured && (
+                    <span className="featuredText">{plan.featured}</span>
+                  )}
                 </span>
                 <div className="pricingContainer">
                   <span className="currentPrice">
                     <span className="bigText">{plan.price[0]}</span>
                     {plan.price[1]}{" "}
                   </span>
-                  {plan.oldPrice && <span className="oldPrice">{plan.oldPrice}</span>}
+                  {plan.oldPrice && (
+                    <span className="oldPrice">{plan.oldPrice}</span>
+                  )}
                 </div>
                 <p className="description">{plan.description}</p>
               </PlanHeader>
@@ -155,11 +176,6 @@ export default ({
                   </li>
                 ))}
               </PlanFeatures>
-              <PlanAction>
-                <ActionButton as="a" href={plan.url}>
-                  {primaryButtonText}
-                </ActionButton>
-              </PlanAction>
             </Plan>
           ))}
         </PlansContainer>

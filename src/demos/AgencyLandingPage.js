@@ -13,6 +13,7 @@ import OurTeam from "components/ourTeam/ThreeColSimpleWithImageAndDashedBorder.j
 // import Testimonial from "components/testimonials/TwoColumnWithImageAndProfilePictureReview.js";
 import FAQ from "components/faqs/SimpleWithSideImage.js";
 import ContactUsForm from "components/forms/TwoColContactUsWithIllustration.js";
+import Pricing from "components/pricing/ThreePlansWithHalfPrimaryBackground";
 import Footer from "components/footers/MiniCenteredFooter.js";
 import customerSupportIllustrationSrc from "images/customer-support-illustration.svg";
 
@@ -21,6 +22,7 @@ export default () => (
     <Hero />
     <MainFeature />
     <Features />
+    <Pricing />
     <ContactUsForm />
     <MainFeature2 />
     {/* <Portfolio /> */}
