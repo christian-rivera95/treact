@@ -21,6 +21,7 @@ export default () => (
     <Hero />
     <MainFeature />
     <Features />
+    <ContactUsForm />
     <MainFeature2 />
     {/* <Portfolio /> */}
     {/* <Testimonial
@@ -55,7 +56,6 @@ export default () => (
       ]}
       textOnLeft={true}
     /> */}
-    <OurTeam />
     <FAQ
       imageSrc={customerSupportIllustrationSrc}
       imageContain={true}
@@ -68,7 +68,7 @@ export default () => (
       }
     />
     <Blog />
-    <ContactUsForm />
+    <OurTeam />
     <Footer />
   </AnimationRevealPage>
 );
