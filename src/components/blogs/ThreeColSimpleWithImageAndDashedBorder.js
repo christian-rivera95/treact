@@ -72,7 +72,7 @@ export default ({
     },
     {
       imageSrc:
-        "https://thumbor.forbes.com/thumbor/fit-in/1200x0/filters%3Aformat%28jpg%29/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F5e33ab078b6cf300071d7cd7%2F0x0.jpg",
+        "https://blog.gt.computrabajo.com/candidato/wp-content/uploads/2018/04/entrevista-trabajo-2-1120x450.jpg",
       author: "Rodrigo Ricardo",
       authorUrl: "/",
       category: "Informativo",
