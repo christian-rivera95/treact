@@ -84,7 +84,7 @@ export default ({
     },
     {
       imageSrc:
-        "https://destinonegocio.com/wp-content/uploads/2015/07/ico-destinonegocio-coaching-profesional-istock-getty-images-849x430.jpg",
+        "https://ahiba.hn/wp-content/uploads/2019/11/Amigos-Migrante-OIM-06.jpg",
       author: "Destinonegocio",
       authorUrl: "https://destinonegocio.com/pe/",
       category: "Gestión",
@@ -92,7 +92,7 @@ export default ({
       description:
         "Explore sus capacidades de alcanzar resultados positivos en el ámbito profesional.",
       url:
-        "https://ahiba.hn/wp-content/uploads/2019/11/Amigos-Migrante-OIM-06.jpg",
+        "https://destinonegocio.com/pe/gestion-pe/entiende-por-que-es-importante-buscar-coaching-profesional/",
     },
   ];
   return (
