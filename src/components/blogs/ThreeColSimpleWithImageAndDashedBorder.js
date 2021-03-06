@@ -92,7 +92,7 @@ export default ({
       description:
         "Explore sus capacidades de alcanzar resultados positivos en el ámbito profesional.",
       url:
-        "https://destinonegocio.com/pe/gestion-pe/entiende-por-que-es-importante-buscar-coaching-profesional/",
+        "https://ahiba.hn/wp-content/uploads/2019/11/Amigos-Migrante-OIM-06.jpg",
     },
   ];
   return (
