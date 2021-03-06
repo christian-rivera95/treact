@@ -48,7 +48,7 @@ export default () => {
             <SocialLink href="https://www.facebook.com/jobval.hn">
               <FacebookIcon />
             </SocialLink>
-            <SocialLink href="https://www.instagram.com/jobval.hn/s">
+            <SocialLink href="https://www.instagram.com/jobval.hn">
               <InstagramIcon />
             </SocialLink>
             <SocialLink href="https://www.youtube.com/watch?v=fupTSOKDzaE&ab_channel=ChristianRivera">
