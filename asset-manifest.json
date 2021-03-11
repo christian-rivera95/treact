@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/treact/static/css/main.00770f9f.chunk.css",
-    "main.js": "/treact/static/js/main.13326827.chunk.js",
-    "main.js.map": "/treact/static/js/main.13326827.chunk.js.map",
+    "main.js": "/treact/static/js/main.bfd464a3.chunk.js",
+    "main.js.map": "/treact/static/js/main.bfd464a3.chunk.js.map",
     "runtime-main.js": "/treact/static/js/runtime-main.6de47146.js",
     "runtime-main.js.map": "/treact/static/js/runtime-main.6de47146.js.map",
     "static/css/2.3451c7ae.chunk.css": "/treact/static/css/2.3451c7ae.chunk.css",
-    "static/js/2.233f5b48.chunk.js": "/treact/static/js/2.233f5b48.chunk.js",
-    "static/js/2.233f5b48.chunk.js.map": "/treact/static/js/2.233f5b48.chunk.js.map",
+    "static/js/2.e72b3148.chunk.js": "/treact/static/js/2.e72b3148.chunk.js",
+    "static/js/2.e72b3148.chunk.js.map": "/treact/static/js/2.e72b3148.chunk.js.map",
     "index.html": "/treact/index.html",
-    "precache-manifest.3a27c553a66371eda62da27775ae47f2.js": "/treact/precache-manifest.3a27c553a66371eda62da27775ae47f2.js",
+    "precache-manifest.69ca5dcab01a1e7f71f49e88b9bd2042.js": "/treact/precache-manifest.69ca5dcab01a1e7f71f49e88b9bd2042.js",
     "service-worker.js": "/treact/service-worker.js",
     "static/css/2.3451c7ae.chunk.css.map": "/treact/static/css/2.3451c7ae.chunk.css.map",
     "static/css/main.00770f9f.chunk.css.map": "/treact/static/css/main.00770f9f.chunk.css.map",
-    "static/js/2.233f5b48.chunk.js.LICENSE.txt": "/treact/static/js/2.233f5b48.chunk.js.LICENSE.txt",
+    "static/js/2.e72b3148.chunk.js.LICENSE.txt": "/treact/static/js/2.e72b3148.chunk.js.LICENSE.txt",
     "static/media/AboutUsPage.jpeg": "/treact/static/media/AboutUsPage.3722f7e7.jpeg",
     "static/media/AgencyLandingPage.jpeg": "/treact/static/media/AgencyLandingPage.df4fcdeb.jpeg",
     "static/media/BlogIndexPage.jpeg": "/treact/static/media/BlogIndexPage.7e8818a2.jpeg",
@@ -71,6 +71,7 @@
     "static/media/map-pin.svg": "/treact/static/media/map-pin.b2f804bd.svg",
     "static/media/menu.svg": "/treact/static/media/menu.ca394ec8.svg",
     "static/media/minus.svg": "/treact/static/media/minus.9661ba0b.svg",
+    "static/media/newJobvalLogo.png": "/treact/static/media/newJobvalLogo.74f18088.png",
     "static/media/play-circle.svg": "/treact/static/media/play-circle.36f0e6ee.svg",
     "static/media/plus.svg": "/treact/static/media/plus.7c6c8212.svg",
     "static/media/prototype-illustration.svg": "/treact/static/media/prototype-illustration.fe9ecccb.svg",
@@ -108,8 +109,8 @@
   "entrypoints": [
     "static/js/runtime-main.6de47146.js",
     "static/css/2.3451c7ae.chunk.css",
-    "static/js/2.233f5b48.chunk.js",
+    "static/js/2.e72b3148.chunk.js",
     "static/css/main.00770f9f.chunk.css",
-    "static/js/main.13326827.chunk.js"
+    "static/js/main.bfd464a3.chunk.js"
   ]
 }

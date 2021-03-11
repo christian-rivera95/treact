@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "8c6c48b0047c344ed845f5d33a11ea6b",
+    "revision": "197ca33c1ee28642704a380979debfdf",
     "url": "/treact/index.html"
   },
   {
-    "revision": "42556c6f90c36dee5667",
+    "revision": "a586cc5e1c55d32e6400",
     "url": "/treact/static/css/2.3451c7ae.chunk.css"
   },
   {
-    "revision": "bbaab037cb1f58fedc0b",
+    "revision": "2ae91f316d74dbeef239",
     "url": "/treact/static/css/main.00770f9f.chunk.css"
   },
   {
-    "revision": "42556c6f90c36dee5667",
-    "url": "/treact/static/js/2.233f5b48.chunk.js"
+    "revision": "a586cc5e1c55d32e6400",
+    "url": "/treact/static/js/2.e72b3148.chunk.js"
   },
   {
     "revision": "2e0f7c880216ec2b1e2a5015f5b73720",
-    "url": "/treact/static/js/2.233f5b48.chunk.js.LICENSE.txt"
+    "url": "/treact/static/js/2.e72b3148.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "bbaab037cb1f58fedc0b",
-    "url": "/treact/static/js/main.13326827.chunk.js"
+    "revision": "2ae91f316d74dbeef239",
+    "url": "/treact/static/js/main.bfd464a3.chunk.js"
   },
   {
     "revision": "22991a76a3ffbb3dc684",
@@ -294,6 +294,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "9661ba0b1e7abb32b6b4b956d5d14899",
     "url": "/treact/static/media/minus.9661ba0b.svg"
+  },
+  {
+    "revision": "74f18088c33225f5bfb8fe4bd76dda77",
+    "url": "/treact/static/media/newJobvalLogo.74f18088.png"
   },
   {
     "revision": "701ae6abd4719e9c2ada3535a497b341",
